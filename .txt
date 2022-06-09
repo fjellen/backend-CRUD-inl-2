@@ -1,8 +1,7 @@
 //auth-server-db-psw
 mongodb+srv://fjellen87:5naLUaRfZEmgX1Ch@crud-inl-2.lgdcxx8.mongodb.net/?retryWrites=true&w=majority
 
-//postman POST
-http://localhost:5000/api/newuser
+-----------------------------------------------------------------------------------------------------------------------------
 
 Headers: Content-Type: application/json
 Body: {
@@ -15,6 +14,11 @@ Body: {
     "password": "Bananskal1"
 }
 
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+//postman POST
+http://localhost:5000/api/newuser
 Klickade på send i postman och all information skickades till mongodb under collections.
 
 //postman GET
