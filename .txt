@@ -1,0 +1,33 @@
+//auth-server-db-psw
+mongodb+srv://fjellen87:5naLUaRfZEmgX1Ch@crud-inl-2.lgdcxx8.mongodb.net/?retryWrites=true&w=majority
+
+//postman POST
+http://localhost:5000/api/newuser
+
+Headers: Content-Type: application/json
+Body: {
+    "name": "Oskar Fjellen",
+    "address": "Norra Ringvägen 6",
+    "zipcode": "36543",
+    "city": "Kosta",
+    "phone": "0735466837",
+    "email": "olleboll@hotmail.com",
+    "password": "Bananskal1"
+}
+
+Klickade på send i postman och all information skickades till mongodb under collections.
+
+//postman GET
+http://localhost:5000/api/getuser
+
+Klickade på send i postman och fick se mina sparade users direkt i postman
+
+//postman PUT
+http://localhost:5000/api/updateuser/62a1e07f92ff44842fbd776d
+Gick in i min DB och kopierade id för positionen jag ville uppdatera, bytte plats på för och efternamn och klickade på send.
+User was updated successfully, gick in i DB för att dubbelkolla och den hade bytt plats på för och efternamn.
+
+//postman DELETE
+http://localhost:5000/api/deleteuser/62a1e07f92ff44842fbd776d
+Jag tog bort allt i body, ändrade till DELETE samt ändrade endpointen till deleteuser och tryckte på send.
+User was deleted successfully, gick in i DB för att dubbelkolla och posten hade blivit deletad.
